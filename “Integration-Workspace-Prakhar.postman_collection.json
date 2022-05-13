@@ -1,0 +1,33 @@
+{
+	"info": {
+		"_postman_id": "1e834a0e-7c30-4328-9b73-c2a025b60a88",
+		"name": "“Integration-Workspace-Prakhar",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Milestone_2",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Milestone_3",
+			"request": {
+				"method": "POST",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Milestone_4",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}

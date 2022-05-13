@@ -1,0 +1,114 @@
+#%RAML 1.0
+title: Major_ass_Prakhar
+mediaType:
+  - application/json
+version: v1
+protocols:
+  - HTTP
+/milestone_2:
+  get:
+    responses:
+      "200":
+        body:
+          type: mile_stone2_Get_response
+  post:
+    responses:
+      "201":
+        body: {}
+    body:
+      type: Mile_stone_Post_response
+types:
+  MileStone_3_post:
+    properties:
+      userdetails:
+        type: object
+      post_id:
+        example: 2003
+        type: number
+        format: int
+      id:
+        example: 1978
+        type: number
+        format: int
+      newProperty:
+        example: Example
+        type: string
+      name:
+        example: Bhaaswar Pothuvaal II
+        type: string
+  Mile_stone_Post_response:
+    properties:
+      id:
+        example: 3817
+        type: number
+        format: int
+      name:
+        example: The Hon. Bankim Bandopadhyay
+        type: string
+      email:
+        example: the_bandopadhyay_bankim_hon@boyle-robel.name
+        type: string
+      gender:
+        example: female
+        type: string
+      status:
+        example: inactive
+        type: string
+  MileStone4_get:
+    properties:
+      id:
+        example: 1272
+        type: number
+        format: int
+      name:
+        example: Gorakhanatha Chaturvedi
+        type: string
+      email:
+        example: gorakhanatha_chaturvedi@nitzsche-crist.biz
+        type: string
+      gender:
+        example: female
+        type: string
+      status:
+        example: active
+        type: string
+  mile_stone2_Get_response:
+    properties:
+      id:
+        example: 3827
+        type: number
+        format: int
+      name:
+        example: Dr. Devi Namboothiri
+        type: string
+      email:
+        example: namboothiri_dr_devi@stamm-turcotte.io
+        type: string
+      status:
+        example: active
+        type: string
+  Mile_stone3_request:
+    properties:
+      post_id:
+        example: 2003
+        type: number
+        format: int
+/Milestone_4:
+  get:
+    responses:
+      "200":
+        body:
+          type: MileStone4_get
+/mileStone_3:
+  get:
+    responses:
+      "200":
+        body:
+          type: Mile_stone3_request
+  post:
+    body:
+      type: Mile_stone3_request
+    responses:
+      "200":
+        body:
+          type: Mile_stone3_request
